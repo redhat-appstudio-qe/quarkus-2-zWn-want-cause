@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-vmhi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-abwr-tenant/quarkus/devfile-sample-code-with-quarkus-vmhi@sha256:b6d6dcf8d26767d643545a22a5adfb688f42c2b00a24b07c9df43689d24f2ffb
+        name: my-java-quarkus
+        resources: {}
+status: {}
